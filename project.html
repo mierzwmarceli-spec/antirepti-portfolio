@@ -18,28 +18,82 @@
     <script src="./project.js" defer></script>
   </head>
   <body>
-    <main class="project-detail page-gutter" id="project-detail">
-      <div class="detail-topbar">
-        <a href="./index.html#work">← ALL WORK</a>
-        <span class="detail-progress" id="detail-progress">PROJECT 01 / 05</span>
-      </div>
-      <p class="detail-number" id="detail-number">01 — 05</p>
-      <h1 class="detail-title" id="detail-title">SCREWDRIVER</h1>
-      <div class="detail-meta">
-        <span id="detail-category">INDUSTRIAL DESIGN</span>
-        <span id="detail-year">2026</span>
-      </div>
-      <figure class="detail-visual">
-        <img id="detail-image" src="./assets/screwdriver.png" width="1120" height="428" alt="Transparent multifunctional screwdriver with a sculpted clear handle and exposed bit storage" fetchpriority="high" />
-      </figure>
-      <section class="detail-copy" aria-labelledby="detail-notes-heading">
-        <p class="detail-copy-label" id="detail-notes-heading">PROJECT NOTES</p>
-        <p class="detail-description" id="detail-description">An everyday tool is re-examined through clarity of grip and storage. The transparent, sculpted handle reveals the bit system inside, making the tool’s function visible while giving a familiar object a precise new silhouette. The study balances utility with a playful material presence.</p>
-      </section>
-      <nav class="detail-navigation" aria-label="Project navigation">
-        <a href="./index.html#work">← BACK TO SELECTED WORK</a>
-        <a id="detail-next" href="./project.html?slug=phase">NEXT PROJECT →</a>
+    <header class="site-header page-gutter project-site-header">
+      <a class="wordmark" href="./index.html#top" aria-label="Marceli Mierzwicki, home">MARCELI MIERZWICKI</a>
+      <p class="header-note">INDEPENDENT DESIGNER — 2026</p>
+      <nav aria-label="Main navigation">
+        <a href="./index.html#work">WORK</a><span aria-hidden="true"> / </span><a href="./index.html#about">ABOUT</a><span aria-hidden="true"> / </span><a href="./index.html#contact">CONTACT</a>
       </nav>
+      <span class="header-rule" aria-hidden="true"></span>
+    </header>
+
+    <main class="project-page" id="project-page">
+      <section class="project-opening page-gutter" id="project-opening">
+        <a class="opening-back" href="./index.html#work">← ALL WORK</a>
+        <p class="opening-category" id="detail-category">01 / INDUSTRIAL DESIGN</p>
+        <h1 class="project-title" id="detail-title">SCREWDRIVER</h1>
+        <p class="project-subtitle" id="detail-subtitle">Multifunctional hand tool</p>
+        <figure class="project-opening-visual" id="detail-main-visual">
+          <img id="detail-image" src="./assets/screwdriver.png" alt="Transparent multifunctional screwdriver with a sculpted clear handle and exposed bit storage" fetchpriority="high" />
+        </figure>
+        <div class="opening-baseline" aria-hidden="true">
+          <span>PORTFOLIO / 2026</span>
+          <span id="detail-progress">01 — 05</span>
+        </div>
+      </section>
+
+      <section class="project-overview page-gutter" aria-labelledby="overview-heading">
+        <h2 class="section-eyebrow" id="overview-heading">01 / OVERVIEW</h2>
+        <p class="overview-lead" id="overview-lead">An experimental hand tool combining ratcheting, telescopic reach and directly accessible bit storage.</p>
+        <p class="overview-body" id="overview-body">Designed for constrained workspaces, the tool prioritises one-handed usability, fast access and ergonomic control. Instead of relying on rubberised coatings, it investigates how geometry itself can generate tactile interaction.</p>
+      </section>
+
+      <section class="project-study project-study-first page-gutter" aria-labelledby="study-one-heading">
+        <figure class="study-figure study-figure-first">
+          <div class="study-image-gallery" id="study-one-gallery"></div>
+          <figcaption id="study-one-caption">02 / EXPOSED BIT STORAGE</figcaption>
+        </figure>
+        <div class="study-copy">
+          <h2 id="study-one-heading">GEOMETRY AS GRIP</h2>
+          <p id="study-one-copy">Sectional variation, surface rhythm and sculpted finger indexing replace soft rubber. The handle becomes the ergonomic system, designed for stable control during repetitive mechanical work.</p>
+        </div>
+      </section>
+
+      <section class="project-study project-study-material page-gutter" aria-labelledby="study-two-heading">
+        <figure class="study-figure study-figure-material" id="study-two-figure">
+          <div class="study-image-gallery" id="study-two-gallery"></div>
+          <figcaption id="study-two-caption">03 / END VIEW &amp; SHAFT INTERFACE</figcaption>
+        </figure>
+        <div class="study-copy">
+          <h2 id="study-two-heading">DIRECT ACCESS</h2>
+          <p id="study-two-copy">Externally accessible bits reduce the actions needed to change tools. Ratcheting and telescopic reach are condensed into the core structure, keeping function visible rather than concealed.</p>
+        </div>
+      </section>
+
+      <section class="project-development page-gutter" aria-labelledby="development-heading">
+        <h2 class="section-eyebrow" id="development-heading">04 / DEVELOPMENT</h2>
+        <p class="development-copy" id="development-copy">From FDM PLA to SLA resin, prototypes refined grip, tolerances and surface quality. Translucency exposes the inner mechanism, making usability and construction the source of the object’s identity.</p>
+        <div class="project-credits" id="project-credits" aria-label="Project credits"></div>
+      </section>
+
+      <section class="next-project page-gutter" aria-labelledby="next-project-label">
+        <p class="next-project-label" id="next-project-label">NEXT PROJECT / 02</p>
+        <a class="next-project-link" id="detail-next" href="./project.html?slug=phase">
+          <span class="next-project-name" id="next-project-name">PHASE →</span>
+          <img class="next-project-image" id="next-project-image" src="./assets/phase.png" alt="" loading="lazy" decoding="async" />
+        </a>
+        <a class="next-project-all-work" href="./index.html#work">ALL WORK</a>
+      </section>
+    </main>
+
+    <footer class="site-footer page-gutter project-site-footer">
+      <span>MARCELI MIERZWICKI</span>
+      <span>© 2026</span>
+    </footer>
+
+    <main class="project-not-found page-gutter" id="project-not-found" hidden>
+      <p>PROJECT NOT FOUND</p>
+      <a href="./index.html#work">← RETURN TO SELECTED WORK</a>
     </main>
   </body>
 </html>
